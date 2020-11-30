@@ -3,7 +3,7 @@
 	//Chamada ao servico REST
 	//URL de servico
 	//Aqui indicamos a URL que iremos utilizar para acessar o serviço
-	$url = "http://192.168.0.15:8080/MyLampLed/properties/on";
+	$url = "http://192.168.0.15:8080/MyGarageControler/properties/gate";
 	//Inicializa cURL para uma URL.
 	//Prepara o CURL para criar um conexao que será estabelecida entre a nossa aplicação e o nosso serviço
     $ch = curl_init($url);
@@ -50,12 +50,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.php" style="color: #ffffff;">TEMPERATURA</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="portao.php" style="color: #ffffff;">Portao</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="lampada.php" style="color: #ffffff;">LAMPARA</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container text-center" data-aos="fade-left" style="width: 322px;margin-top: 174px;"><img src="assets/img/lampada%20logo.png" style="width: 270px;"><strong class="text-right"><?php echo ($meuobjeto); ?></strong><a class="btn btn-info" role="button" href="mudarTemperatura.html" style="width: 292px;margin-bottom: 6px;background-color: #4988e8;margin-top: 14px;"> BOTÃO DA LAMPADA</a></div>
+    <div class="container text-center" data-aos="fade-left" style="width: 322px;margin-top: 174px;"><img src="assets/img/garagem%20logo.png" style="width: 270px;"><strong class="text-right"><?php echo ($meuobjeto); ?></strong><a class="btn btn-info" role="button" href="mudarTemperatura.html" style="width: 292px;margin-bottom: 6px;background-color: #4988e8;margin-top: 14px;"> BOTÃO DA LAMPADA</a></div>
 
     <script
         src="assets/js/jquery.min.js"></script>
